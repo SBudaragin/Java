@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class z4 {
+public class Z4 {
     public static void main(String[] args) {
         boolean flag = true;
         int i = 0;
@@ -12,7 +12,7 @@ public class z4 {
                 i = Integer.parseInt(b, 2);
                 flag = false;
             } catch (Exception e) {
-                System.out.println("Введите корректное число \n"+ e);
+                System.out.println("Введите корректное число \n" + e);
             }
         }
 
