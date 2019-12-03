@@ -1,4 +1,6 @@
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Itog1 {
     public static void main(String[] args) {
@@ -12,6 +14,9 @@ public class Itog1 {
             try {
                 b = new Scanner(System.in).nextInt();
                 s = String.valueOf(b);
+                Pattern pattern = Pattern.compile("[0-1]+?");
+                Matcher matcher = pattern.matcher(s);
+                if (!matcher.matches()) throw new Exception("Введенно не двоичное число.");
                 flag = false;
             } catch (Exception e) {
                 System.out.println("Введите корректное число \n" + e);
